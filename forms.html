@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Demo</title>
+</head>
+
+<body>
+	<!-- first examples for simple input key -->
+	<h1>Forms Demo</h1>
+	<form action="/rahul"> 
+		<input type="text">
+		<input type="password">
+		<input type="date">
+		<input type="time">
+		<input type="submit" name="" id="">
+	</form>
+	<!-- second example for lable key with input function that how its works  -->
+	<h2>This is my facebook profile you can go </h2>
+
+	<form action="/science">
+		<p>
+			<label for="username">Enter username</label>
+			<input type="text" placeholder="username" id="username" name="username">
+		</p>
+		<p>
+			<label for="password">Enter password</label>
+			<input type="password" placeholder="password" name="password">
+		</p>
+		<p>
+			<label for="number">select number </label>
+			<input type="number" name="num">
+		</p>
+		<p>
+			<label for="color">chosse color</label>
+			<input type="color" name="color" id="color" name="color">
+		</p>
+		<h3>Search google</h3>
+		<form action="https://www.google.com/search">
+			<input type="text" name="q">
+			<button>search google</button>
+		</form>
+		<h3>Search youtube</h3> 
+		<form action="https://www.youtube.com">
+			<input type="text" name="alan walker">
+			<button>youtube</button>
+		</form>
+
+		<h3>More Inputs !</h3>
+		<form action="/birds">
+			<input type="checkbox" name="agree_tos" id="agree">
+			<label for="agree">I agree for this </label>
+			<p>
+				<label for="XS">XS</label>
+				<input type="radio" name="size" id="XS" value="xs">
+				<label for="M">M</label>
+				<input type="radio" name="size" id="M" value="M">
+				<label for="S">S</label>
+				<input type="radio" name="size" id="M" value="M">
+			</p>
+			<P>
+				<label for="software">Select your software </label>
+				<select name="software" id="software">
+					<option value="Python">Python</option>
+					<option value="Java">Java</option>
+					<option value="HTML">HTML</option>
+					<option value="CSS">CSS</option>
+				</select>
+			</P>
+			<P>
+				<label for="job">Please choose you job wisley for your future </label>
+				<select name="job" id="job">
+					<option value="Software Developer">Software Developer</option>
+					<option value="Acting carrer">Acting Career</option>
+					<option value="Computer Engineer ">Computer Engineer</option>
+				</select>
+			</P>
+			<p>
+				<br>
+				<label for="text">f Anything Please comment bellow</label>
+				<textarea name="text" id="text" cols="20" rows="5" placeholder="Type somting here "></textarea>
+			</p>
+
+			<h3>Form Validations</h3>
+
+			<form action="/testing">
+				<label for="name">ID</label>
+				<input type="text" name="first" id="first" required minlength="5" maxlength="10" required>
+				<button>submit</button>
+			</form>
+			<h3>For just a example for testing a min/max how its works</h3>
+			<p>
+				<form action="/min/max">
+					<label for="Username">Username</label>
+					<input type="text" name="Username" id="Username" required minlength="5" maxlength="15" required>
+					<!-- jsut example for email requied @ bellow  -->
+					<p>
+						<input type="Email" required>
+					</p>
+					<button>submit</button>
+				</form> 
+			</p>
+	</form>
+
+	<!-- all the input type for jsut a examples  -->
+	<!-- for more attributs go to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">MDN</a> -->
+</body>
+
+</html>
